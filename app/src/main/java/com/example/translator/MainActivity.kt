@@ -1,18 +1,16 @@
 package com.example.translator
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import android.view.View.GONE
+import android.view.View.VISIBLE
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.translator.model.AppState
 import com.example.translator.model.data.DataModel
 import com.example.translator.presenter.Presenter
-import com.example.translator.view.BaseActivity
-import com.example.translator.view.MainAdapter
-import com.example.translator.view.MainPresenterImpl
-import com.example.translator.view.SearchDialogFragment
+import com.example.translator.view.*
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : BaseActivity<AppState>() {
 
@@ -61,12 +59,12 @@ class MainActivity : BaseActivity<AppState>() {
             is AppState.Loading -> {
                 showViewLoading()
                 if (appState.progress != null) {
-                    progress_bar_horizontal.visibility = View.VISIBLE
-                    progress_bar_round.visibility = View.GONE
+                    progress_bar_horizontal.visibility = VISIBLE
+                    progress_bar_round.visibility = GONE
                     progress_bar_horizontal.progress = appState.progress
                 } else {
-                    progress_bar_horizontal.visibility = View.GONE
-                    progress_bar_round.visibility = View.VISIBLE
+                    progress_bar_horizontal.visibility = GONE
+                    progress_bar_round.visibility = VISIBLE
                 }
             }
             is AppState.Error -> {
@@ -84,21 +82,21 @@ class MainActivity : BaseActivity<AppState>() {
     }
 
     private fun showViewSuccess() {
-        success_linear_layout.visibility = View.VISIBLE
-        loading_frame_layout.visibility = View.GONE
-        error_linear_layout.visibility = View.GONE
+        success_linear_layout.visibility = VISIBLE
+        loading_frame_layout.visibility = GONE
+        error_linear_layout.visibility = GONE
     }
 
     private fun showViewLoading() {
-        success_linear_layout.visibility = View.GONE
-        loading_frame_layout.visibility = View.VISIBLE
-        error_linear_layout.visibility = View.GONE
+        success_linear_layout.visibility = GONE
+        loading_frame_layout.visibility = VISIBLE
+        error_linear_layout.visibility = GONE
     }
 
     private fun showViewError() {
-        success_linear_layout.visibility = View.GONE
-        loading_frame_layout.visibility = View.GONE
-        error_linear_layout.visibility = View.VISIBLE
+        success_linear_layout.visibility = GONE
+        loading_frame_layout.visibility = GONE
+        error_linear_layout.visibility = VISIBLE
     }
 
     companion object {
