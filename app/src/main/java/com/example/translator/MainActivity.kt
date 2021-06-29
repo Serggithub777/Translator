@@ -6,8 +6,12 @@ import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.translator.model.AppState
+import com.example.translator.model.data.DataModel
 import com.example.translator.presenter.Presenter
 import com.example.translator.view.BaseActivity
+import com.example.translator.view.MainAdapter
+import com.example.translator.view.MainPresenterImpl
+import com.example.translator.view.SearchDialogFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity<AppState>() {
