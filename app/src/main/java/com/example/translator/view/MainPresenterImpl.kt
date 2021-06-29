@@ -1,6 +1,10 @@
 package com.example.translator.view
 
 import com.example.translator.model.AppState
+import com.example.translator.model.datasource.DataSourceLocal
+import com.example.translator.model.datasource.DataSourceRemote
+import com.example.translator.model.repository.RepositoryImplementation
+import com.example.translator.presenter.Presenter
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableObserver
 
