@@ -3,7 +3,6 @@ package com.example.translator.view
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.translator.model.AppState
-import com.example.translator.presenter.Presenter
 
 abstract class BaseActivity<T : AppState> : AppCompatActivity(), View {
 

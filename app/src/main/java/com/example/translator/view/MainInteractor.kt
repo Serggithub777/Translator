@@ -3,7 +3,6 @@ package com.example.translator.view
 import com.example.translator.model.AppState
 import com.example.translator.model.data.DataModel
 import com.example.translator.model.repository.Repository
-import com.example.translator.presenter.Interactor
 import io.reactivex.Observable
 
 class MainInteractor(

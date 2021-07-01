@@ -7,7 +7,6 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.translator.model.AppState
 import com.example.translator.model.data.DataModel
-import com.example.translator.presenter.Presenter
 import com.example.translator.view.*
 import kotlinx.android.synthetic.main.activity_main.*
 
