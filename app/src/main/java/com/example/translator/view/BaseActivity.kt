@@ -5,6 +5,7 @@ import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.translator.R
 import com.example.translator.model.AppState
+import com.example.translator.utils.network.isOnline
 import com.example.translator.utils.ui.AlertDialogFragment
 import com.example.translator.viewmodel.BaseViewModel
 import com.example.translator.viewmodel.Interactor

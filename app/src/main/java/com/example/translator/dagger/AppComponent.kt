@@ -1,6 +1,7 @@
 package com.example.translator.dagger
 
 import android.app.Application
+import com.example.translator.application.TranslatorApp
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule
