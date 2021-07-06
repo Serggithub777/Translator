@@ -5,8 +5,13 @@ import com.example.translator.model.datasource.RetrofitImplementation
 import com.example.translator.model.datasource.RoomDataBaseImplementation
 import com.example.translator.model.repository.Repository
 import com.example.translator.model.repository.RepositoryImplementation
+import com.example.translator.model.repository.RepositoryImplementationLocal
+import com.example.translator.model.repository.RepositoryLocal
+import com.example.translator.room.HistoryDataBase
 import com.example.translator.view.MainInteractor
 import com.example.translator.view.MainViewModel
+import com.example.translator.view.history.HistoryInteractor
+import com.example.translator.view.history.HistoryViewModel
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
 

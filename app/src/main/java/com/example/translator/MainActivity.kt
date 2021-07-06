@@ -1,5 +1,6 @@
 package com.example.translator
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -11,8 +12,12 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.translator.model.AppState
 import com.example.translator.model.data.DataModel
+import com.example.translator.utils.convertMeaningsToString
 import com.example.translator.utils.network.isOnline
 import com.example.translator.view.*
+import com.example.translator.view.base.BaseActivity
+import com.example.translator.view.descriptionscreen.DescriptionActivity
+import com.example.translator.view.history.HistoryActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.viewmodel.ext.android.viewModel
 

@@ -2,6 +2,7 @@ package com.example.translator.view
 import com.example.translator.model.AppState
 import com.example.translator.model.data.DataModel
 import com.example.translator.model.repository.Repository
+import com.example.translator.model.repository.RepositoryLocal
 import com.example.translator.viewmodel.Interactor
 
 

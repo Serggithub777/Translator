@@ -1,7 +1,11 @@
 package com.example.translator.model.datasource
 
+import com.example.translator.model.AppState
 import com.example.translator.model.data.DataModel
-import io.reactivex.Observable
+import com.example.translator.room.HistoryDao
+import com.example.translator.utils.convertDataModelSuccessToEntity
+import com.example.translator.utils.mapHistoryEntityToSearchResult
+
 
 class RoomDataBaseImplementation(private val historyDao: HistoryDao) :
     DataSourceLocal<List<DataModel>> {
