@@ -1,4 +1,4 @@
-package com.example.translator.view
+package com.example.translator.view.base
 
 import android.os.Bundle
 import android.os.PersistableBundle
