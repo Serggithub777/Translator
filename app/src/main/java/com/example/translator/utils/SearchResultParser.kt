@@ -4,11 +4,11 @@ import com.example.translator.model.AppState
 import com.example.translator.model.data.DataModel
 import com.example.translator.model.data.Meanings
 
-fun parseSearchResults(state: AppState): AppState {
+fun parseSearchResults(data: AppState): AppState {
     val newSearchResults = arrayListOf<DataModel>()
-    when (state) {
+    when (data) {
         is AppState.Success -> {
-            val searchResults = state.data
+            val searchResults = data.data
             if (!searchResults.isNullOrEmpty()) {
                 for (searchResult in searchResults) {
                     parseResult(searchResult, newSearchResults)

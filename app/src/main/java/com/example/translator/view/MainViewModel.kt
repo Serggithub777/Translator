@@ -4,11 +4,9 @@ import androidx.lifecycle.LiveData
 import com.example.translator.model.AppState
 import com.example.translator.utils.parseSearchResults
 import com.example.translator.viewmodel.BaseViewModel
-import io.reactivex.disposables.Disposable
-import io.reactivex.observers.DisposableObserver
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import javax.inject.Inject
 
 class MainViewModel(private val interactor: MainInteractor) :
     BaseViewModel<AppState>() {

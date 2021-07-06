@@ -43,10 +43,6 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1'
 
-    //Rx-Java
-    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
-    implementation 'io.reactivex.rxjava2:rxjava:2.2.8'
-
     //Retrofit 2
     implementation 'com.squareup.retrofit2:retrofit:2.6.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
@@ -56,6 +52,18 @@ dependencies {
     //Koin for Android
     implementation 'org.koin:koin-android:2.0.1'
     implementation 'org.koin:koin-android-viewmodel:2.0.1'
+
+    //Download images
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    kapt 'com.github.bumptech.glide:compiler:4.9.0'
+
+    //Room
+    implementation 'androidx.room:room-runtime:2.2.0-alpha01'
+    kapt 'androidx.room:room-compiler:2.2.0-alpha01'
+    implementation 'androidx.room:room-ktx:2.2.0-alpha01'
 
     //Test
     testImplementation 'junit:junit:4.12'

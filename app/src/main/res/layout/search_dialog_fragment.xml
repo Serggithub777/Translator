@@ -50,4 +50,13 @@
             tools:visibility="visible"
             android:contentDescription="@string/delete_description"/>
     </FrameLayout>
+
+
+    <!--<com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            style="@style/BaseFlatButton"
+            android:layout_height="wrap_content"
+            android:text="@string/button_search"
+            app:cornerRadius="16dp"
+            android:layout_gravity="end"/>-->
 </LinearLayout>

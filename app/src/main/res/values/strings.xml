@@ -14,5 +14,5 @@
     <string name="dialog_message_device_is_offline">You can not use app without internet connection. Please, check
         internet connection.
     </string>
-    <string name="dialog_tittle_sorry">Sorry</string>
+    <string name="dialog_title_sorry">Sorry</string>
 </resources>

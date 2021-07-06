@@ -1,7 +1,11 @@
 package com.example.translator.dagger
+import com.example.translator.model.data.DataModel
 import com.example.translator.model.datasource.RetrofitImplementation
 import com.example.translator.model.datasource.RoomDataBaseImplementation
+import com.example.translator.model.repository.Repository
 import com.example.translator.model.repository.RepositoryImplementation
+import com.example.translator.view.MainInteractor
+import com.example.translator.view.MainViewModel
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
 

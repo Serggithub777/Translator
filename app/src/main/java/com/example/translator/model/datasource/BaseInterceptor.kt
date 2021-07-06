@@ -16,13 +16,17 @@ class BaseInterceptor private constructor() : Interceptor {
     }
 
     fun getResponseCode(): ServerResponseStatusCode {
-        var statusCode = ServerResponseStatusCode.UNDEFINED_ERROR
+        var statusCode =
+            ServerResponseStatusCode.UNDEFINED_ERROR
         when (responseCode / 100) {
             1 -> statusCode = ServerResponseStatusCode.INFO
             2 -> statusCode = ServerResponseStatusCode.SUCCESS
-            3 -> statusCode = ServerResponseStatusCode.REDIRECTION
-            4 -> statusCode = ServerResponseStatusCode.CLIENT_ERROR
-            5 -> statusCode = ServerResponseStatusCode.SERVER_ERROR
+            3 -> statusCode =
+                ServerResponseStatusCode.REDIRECTION
+            4 -> statusCode =
+                ServerResponseStatusCode.CLIENT_ERROR
+            5 -> statusCode =
+                ServerResponseStatusCode.SERVER_ERROR
         }
         return statusCode
     }
