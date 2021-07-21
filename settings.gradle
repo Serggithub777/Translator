@@ -1,3 +1,6 @@
+include ':utils'
+include ':repository'
+include ':model'
 include ':core'
 include ':mylibrary'
 include ':app'

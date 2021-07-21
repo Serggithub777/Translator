@@ -1,4 +1,4 @@
-package com.example.translator.viewmodel
+package com.example.core.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

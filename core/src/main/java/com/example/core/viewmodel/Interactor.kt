@@ -1,4 +1,4 @@
-package com.example.translator.viewmodel
+package com.example.core.viewmodel
 
 
 interface Interactor<T> {

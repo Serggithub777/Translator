@@ -3,7 +3,7 @@ package com.example.translator.view.history
 import androidx.lifecycle.LiveData
 import com.example.translator.model.AppState
 import com.example.translator.utils.parseLocalSearchResults
-import com.example.translator.viewmodel.BaseViewModel
+import com.example.core.viewmodel.BaseViewModel
 import kotlinx.coroutines.launch
 
 class HistoryViewModel(private val interactor: HistoryInteractor) :
