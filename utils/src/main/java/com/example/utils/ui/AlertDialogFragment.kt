@@ -1,4 +1,4 @@
-package com.example.translator.utils.ui
+package com.example.utils.ui
 
 import android.app.Dialog
 import android.os.Bundle

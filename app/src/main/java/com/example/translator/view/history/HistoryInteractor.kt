@@ -2,8 +2,8 @@ package com.example.translator.view.history
 
 import com.example.model.data.AppState
 import com.example.model.data.DataModel
-import com.example.translator.model.repository.Repository
-import com.example.translator.model.repository.RepositoryLocal
+import com.example.repository.Repository
+import com.example.repository.RepositoryLocal
 import com.example.core.viewmodel.Interactor
 
 class HistoryInteractor(

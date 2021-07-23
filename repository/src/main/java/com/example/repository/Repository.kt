@@ -1,4 +1,4 @@
-package com.example.translator.model.repository
+package com.example.repository
 
 
 

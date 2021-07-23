@@ -1,4 +1,4 @@
-package com.example.translator.model.datasource
+package com.example.repository.api
 
 import com.example.model.data.DataModel
 import kotlinx.coroutines.Deferred

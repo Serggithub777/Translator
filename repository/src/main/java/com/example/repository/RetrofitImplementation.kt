@@ -1,4 +1,4 @@
-package com.example.translator.model.datasource
+package com.example.repository
 
 import com.example.model.data.DataModel
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
