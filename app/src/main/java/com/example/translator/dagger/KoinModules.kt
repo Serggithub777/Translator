@@ -1,6 +1,6 @@
 package com.example.translator.dagger
 import androidx.room.Room
-import com.example.translator.model.data.DataModel
+import com.example.model.data.DataModel
 import com.example.translator.model.datasource.RetrofitImplementation
 import com.example.translator.model.datasource.RoomDataBaseImplementation
 import com.example.translator.model.repository.Repository
@@ -12,7 +12,6 @@ import com.example.translator.view.MainInteractor
 import com.example.translator.view.MainViewModel
 import com.example.translator.view.history.HistoryInteractor
 import com.example.translator.view.history.HistoryViewModel
-import org.koin.core.qualifier.named
 import org.koin.dsl.module
 
 val application = module {

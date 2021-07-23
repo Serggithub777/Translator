@@ -1,8 +1,8 @@
 package com.example.translator.utils
 
-import com.example.translator.model.AppState
-import com.example.translator.model.data.DataModel
-import com.example.translator.model.data.Meanings
+import com.example.model.data.AppState
+import com.example.model.data.DataModel
+import com.example.model.data.Meanings
 import com.example.translator.room.HistoryEntity
 
 fun parseOnlineSearchResults(state: AppState): AppState {

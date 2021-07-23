@@ -1,4 +1,4 @@
-package com.example.translator.model
+package com.example.model.data
 
 import com.example.translator.model.data.DataModel
 

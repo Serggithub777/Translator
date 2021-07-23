@@ -1,4 +1,4 @@
-package com.example.translator.model.data
+package com.example.model.data
 
 import com.google.gson.annotations.SerializedName
 

@@ -3,11 +3,10 @@ package com.example.translator.view.history
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import com.example.translator.R
-import com.example.translator.model.AppState
-import com.example.translator.model.data.DataModel
+import com.example.model.data.AppState
+import com.example.model.data.DataModel
 import com.example.translator.view.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_history.*
-import org.koin.android.viewmodel.ext.android.viewModel
 
 class HistoryActivity : BaseActivity<AppState, HistoryInteractor>() {
 

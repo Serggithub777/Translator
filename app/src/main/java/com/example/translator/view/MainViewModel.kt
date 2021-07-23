@@ -1,7 +1,7 @@
 package com.example.translator.view
 
 import androidx.lifecycle.LiveData
-import com.example.translator.model.AppState
+import com.example.model.data.AppState
 import com.example.translator.utils.parseOnlineSearchResults
 import com.example.core.viewmodel.BaseViewModel
 import kotlinx.coroutines.Dispatchers
