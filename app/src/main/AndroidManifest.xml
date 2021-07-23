@@ -12,22 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".application.TranslatorApp">
-        <activity android:name=".MainActivity"
+        android:name="com.example.translator.application.TranslatorApp">
+        <activity android:name="com.example.translator.view.main.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-
         </activity>
         <activity
-            android:name=".view.descriptionscreen.DescriptionActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name="com.example.history.view.HistoryActivity"
+            android:name="com.example.translator.view.descriptionscreen.DescriptionActivity"
             android:screenOrientation="portrait"/>
     </application>
-
 </manifest>

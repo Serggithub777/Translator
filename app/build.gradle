@@ -24,7 +24,7 @@ android {
         targetCompatibility Config.java_version
     }
 
-   dynamicFeatures = [Modules.historyScreen]
+    dynamicFeatures = [Modules.historyScreen]
 }
 
 dependencies {

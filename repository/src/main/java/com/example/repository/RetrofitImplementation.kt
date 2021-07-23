@@ -1,6 +1,8 @@
 package com.example.repository
 
 import com.example.model.data.DataModel
+import com.example.repository.api.ApiService
+import com.example.repository.api.BaseInterceptor
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient

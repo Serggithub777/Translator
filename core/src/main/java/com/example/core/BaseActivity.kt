@@ -1,16 +1,14 @@
 package com.example.core
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.translator.R
-import com.example.translator.model.AppState
-import com.example.translator.model.data.DataModel
+import com.example.core.viewmodel.BaseViewModel
+import com.example.core.viewmodel.Interactor
+import com.example.model.data.AppState
+import com.example.model.data.DataModel
 import com.example.translator.utils.network.isOnline
-import com.example.translator.utils.ui.AlertDialogFragment
-import com.example.translator.viewmodel.BaseViewModel
-import com.example.translator.viewmodel.Interactor
+import com.example.utils.ui.AlertDialogFragment
 import kotlinx.android.synthetic.main.loading_layout.*
 
 private const val DIALOG_FRAGMENT_TAG = "74a54328-5d62-46bf-ab6b-cbf5d8c79522"
@@ -20,8 +18,8 @@ abstract class BaseActivity<T : AppState, I : Interactor<T>> : AppCompatActivity
     abstract val model: BaseViewModel<T>
     protected var isNetworkAvailable: Boolean = false
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         isNetworkAvailable = isOnline(applicationContext)
     }
 
@@ -53,7 +51,7 @@ abstract class BaseActivity<T : AppState, I : Interactor<T>> : AppCompatActivity
                 if (appState.progress != null) {
                     progress_bar_horizontal.visibility = View.VISIBLE
                     progress_bar_round.visibility = View.GONE
-                    progress_bar_horizontal.progress = appState.progress
+                    progress_bar_horizontal.progress = appState.progress!!
                 } else {
                     progress_bar_horizontal.visibility = View.GONE
                     progress_bar_round.visibility = View.VISIBLE
@@ -74,7 +72,8 @@ abstract class BaseActivity<T : AppState, I : Interactor<T>> : AppCompatActivity
     }
 
     protected fun showAlertDialog(title: String?, message: String?) {
-        AlertDialogFragment.newInstance(title, message).show(supportFragmentManager, DIALOG_FRAGMENT_TAG)
+        AlertDialogFragment.newInstance(title, message)
+            .show(supportFragmentManager, DIALOG_FRAGMENT_TAG)
     }
 
     private fun showViewWorking() {
