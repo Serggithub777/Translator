@@ -1,4 +1,4 @@
-package com.example.translator
+package com.example.translator.view.main
 
 import android.content.Intent
 import android.os.Bundle
@@ -13,7 +13,8 @@ import com.example.translator.utils.network.isOnline
 import com.example.translator.view.*
 import com.example.translator.view.base.BaseActivity
 import com.example.translator.view.descriptionscreen.DescriptionActivity
-import com.example.translator.view.history.HistoryActivity
+import com.example.hystoryscreen.history.HistoryActivity
+import com.example.translator.view.main.adapter.MainAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 

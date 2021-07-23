@@ -1,4 +1,4 @@
-package com.example.translator.view.history
+package com.example.history.view
 
 import androidx.lifecycle.LiveData
 import com.example.model.data.AppState

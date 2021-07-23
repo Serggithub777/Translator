@@ -1,3 +1,4 @@
+include ':hystoryscreen'
 include ':utils'
 include ':repository'
 include ':model'

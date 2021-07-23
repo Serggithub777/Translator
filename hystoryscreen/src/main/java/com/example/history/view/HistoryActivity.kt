@@ -1,4 +1,4 @@
-package com.example.translator.view.history
+package com.example.history.view
 
 import android.os.Bundle
 import androidx.lifecycle.Observer

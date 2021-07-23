@@ -1,4 +1,4 @@
-package com.example.translator.view
+package com.example.translator.view.main.adapter
 
 import android.view.LayoutInflater
 import android.view.View
